@@ -16,6 +16,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
@@ -45,14 +47,11 @@ public class MajorProgram {
 
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY)
+    @JsonBackReference
     private DegreeProgram degreeProgram;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "requirement_id", referencedColumnName = "id")
+    @JoinColumn(name = "majorProgram_id", referencedColumnName = "id")
     private Set<Requirement> requirements;
-
-    @ManyToMany(cascade = { CascadeType.DETACH, CascadeType.REFRESH })
-    @JoinTable(name = "majorProgram_module", joinColumns = @JoinColumn(name = "majorProgram_id"), inverseJoinColumns = @JoinColumn(name = "module_id"))
-    private Set<Module> modules;
 
 }

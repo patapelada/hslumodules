@@ -12,6 +12,7 @@ import com.bartock.hslumodules.data.Language;
 import com.bartock.hslumodules.data.MajorProgram;
 import com.bartock.hslumodules.data.Module;
 import com.bartock.hslumodules.data.ModuleType;
+import com.bartock.hslumodules.data.Requirement;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -92,7 +93,8 @@ public class DegreeProgramRepositoryTest {
         DegreeProgram testDegreeProgram = new DegreeProgram("I", "Informatik");
         MajorProgram testMajorProgram = new MajorProgram("SW", "Software Dev.");
         Module testModule = entityManager.persist(getTestModule("OOP"));
-        testMajorProgram.setModules(Set.of(testModule));
+        Requirement majorRequirement = new Requirement(Set.of(testModule));
+        testMajorProgram.setRequirements(Set.of(majorRequirement));
         testDegreeProgram.addMajorProgram(testMajorProgram);
 
         // when
@@ -104,7 +106,7 @@ public class DegreeProgramRepositoryTest {
         MajorProgram major = result.getMajors().iterator().next();
         assertNotNull(major.getId());
         assertEquals("SW", major.getCode());
-        Module majorModule = major.getModules().iterator().next();
+        Module majorModule = major.getRequirements().iterator().next().getModules().iterator().next();
         assertNotNull(majorModule.getId());
         assertEquals("OOP", majorModule.getCode());
     }

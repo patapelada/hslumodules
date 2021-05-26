@@ -52,7 +52,7 @@ public class Module {
     @JoinTable(name = "module_language", joinColumns = @JoinColumn(name = "module_id"), inverseJoinColumns = @JoinColumn(name = "language_isoCode"))
     private Set<Language> language;
 
-    @ManyToMany(cascade = { CascadeType.DETACH, CascadeType.REFRESH })
+    @ManyToMany(cascade = { CascadeType.DETACH })
     @JoinTable(name = "module_requirement", joinColumns = @JoinColumn(name = "module_id"), inverseJoinColumns = @JoinColumn(name = "requirement_id"))
     private Set<Requirement> requirements;
 

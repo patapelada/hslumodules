@@ -11,6 +11,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
@@ -36,6 +38,7 @@ public class DegreeProgram {
     @NonNull
     private String name;
 
+    @JsonManagedReference
     @OneToMany(mappedBy = "degreeProgram", cascade = CascadeType.ALL)
     private Set<MajorProgram> majors = new HashSet<>();
 

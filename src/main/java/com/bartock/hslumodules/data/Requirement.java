@@ -28,7 +28,7 @@ import lombok.Setter;
 public class Requirement {
 
     @Id
-    @Column(name = "requirement_id")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
