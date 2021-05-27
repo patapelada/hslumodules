@@ -7,134 +7,134 @@ INSERT INTO language (iso_code, name) VALUES
 ('EN',	'Englisch');
 
 INSERT INTO module (id, code, name, credits, semester_model,intensive_week_model, fall_semester_model, spring_semester_model, type) VALUES
-(1,'AD','Algorithmen & Datenstrukturen',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,0),
-(2,'ANLIS','Analysis',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,0),
-(3,'ASTAT','Applied Statistics for Data Science',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,1),
-(4,'APPE','Applikationsentwicklung',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,0),
-(5,'CNA','Computer & Network Architecture',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,0),
-(6,'DBS','Datenbanksysteme',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,1),
-(7,'DMATH','Diskrete Mathematik',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,0),
-(8,'ISF','Information Security Fundamentals',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,0),
-(9,'ITEO','IT-System Engineering & Operation',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,0),
-(10,'MOD','Modellierung Grundlagen',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,0),
-(11,'OOP','Objektorientierte Programmierung',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,0),
-(12,'PLAB','Programmier-Labor',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,0),
-(13,'PMRE','Project Management &Requirement Engineering',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,1),
-(14,'SWDE','Software-Development',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,1),
-(15,'VSK','Verteilte Systeme & Komponenten',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,1),
-(16,'BAA','Bachelorarbeit',12,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,4),
-(17,'WIPRO','Wirtschaftsprojekt',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,4),
-(18,'FKOM','Fachkommunikation',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,4),
-(19,'PMB','Project Management Basics',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,4),
-(20,'PTA','Projekt und Teamarbeit',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,4),
-(21,'ACBA','Accounting Basics',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(22,'AEMBS','Advanced Embedded Systems',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(23,'AIOT','Advanced Internet of Things',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(24,'AITEC','Advances Internet Technologies',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(25,'ADPENTEST','Advanced Penetration Testing',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(26,'AROB','Angewandte industrielle Robotik',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(27,'MAT2','Angewandte Mathematik 2',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(28,'BW','Betriebswirtschaft im digitalen Umfeld',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(29,'BDM','Big Data Management',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(30,'CSA','C# in Action',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(31,'CHMA','Change Management',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(32,'CPLAB','Cloud Programming Lab',3,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(33,'COBAU','Compilerbau',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(34,'CNF','Computer Network Fundamentals',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(35,'CCNA','Computer Networks',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(36,'INFKOL','Computer Science Hot Topics',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(37,'CONS','Consulting',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(38,'ICS.CRS','Crisis Recovery Strategies',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(39,'CYBER','Cyber Defence',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(40,'DSO','Datenschutz in Organisation',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(41,'DCEX','Digital Customer Experience',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(42,'DIBM','Digitale Business Modelle',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(43,'DITI','Digitale Transformation in der Industrie',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(44,'DICO','Digitales Controlling',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(45,'EBV','Echtzeit-Bildverarbeitung',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(46,'ENLAB','Enterprise Programming Lab',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(47,'GAME','Game Theory',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(48,'GIS','Geographic Information Systems',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(49,'GPRO','Geschäftsprozesse und Organisation',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(50,'HMAT','Höhere Mathematik',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(51,'IPCV','Image Processing & Computer Vision',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(52,'IMLAB','Immersive Labs',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(53,'IMATH','Informatik Mathematik',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(54,'ITAU','IT Audit',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(55,'ISMA','IT Service Management',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(56,'ITRE','IT-Recht',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(57,'INFSEC+MAN','IT-Security Management',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(58,'KNRE','Knowledge Representation',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(59,'KOMA','Konfliktmanagement',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(60,'LIAL','Lineare Algebra',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(61,'MA+PHY1','Mathematik & Physik Technik 1',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(62,'MICRO','Microcontroller',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(63,'MOBPRO','Mobile Programming',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(64,'MOBSYS','Mobile Systems',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(65,'NETW1','Networking 1',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(66,'IOS','Programmieren fürs iOS',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(67,'REUF','Recht für Unternehmensführung',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(68,'MARI','Management und Recht im Informationszeitalter',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(69,'SIM+MOD','Management und Recht im Informationszeitalter',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(70,'SWT','Software Testing',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(71,'UKOM','Unternehmenskommunikation und Sprachtechnologien',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(72,'UGDM','Unternehmungsgründungen in digitalen Märkten',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(73,'VRT','Virtual Reality Technologies',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(74,'VWL','Volkswirtschaft',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(75,'WEBT','Web-Technologien',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(76,'XML','XML & JSON Technologies',3,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(77,'ADML','Advanced Machine Learning',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(78,'AISO','Artifical Intelligence: Search & Optimization',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(79,'BDLC','Big Data Lab Cluster',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(80,'BDLS','Big Data Lab Sandbox',3,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(81,'BCHAIN','Blockchain',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(82,'BIDS','Business Intelligence und Decision Support',3,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(83,'CI','Cloud Infrastructure',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(84,'CILAB','Cloud Infrastructure Lab',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(85,'CAB','Cloud-Services Angebot & Betrieb',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(86,'ROBLAB','Cognitive Robotics Lab',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(87,'DASB','Data Science Basics',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(88,'DAWA','Data Warehousing',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(89,'DAVI','Datenvisualisierung',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(90,'DL4G','Deep Learning for Games',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(91,'FOMED','Formen der Mediengestaltung',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(92,'GAMEDES','Game Design',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(93,'GAMEDEV','Game Development',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(94,'HFD','Human Factors & Design',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(95,'ISLAB','Information Security Lab',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(96,'ISM','Information Security Management',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(97,'ISOA','Information Security - Organisatorische Aspekte',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(98,'IAVR','Interaction for Virtual Reality',3,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(99,'IOT','Internet of Things',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(100,'KBDS','Knowledge-based Decision Support Systems',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(101,'KRYPTO','Kryptologie ICS',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(102,'ML','Machine Learning',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(103,'MANSEC','Managementaspekte der Informationssicherheit',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(104,'MOBLAB','Mobile Programming Lab',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(105,'PCP','Programming Concepts & Paradigms',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(106,'SPRG','Sicheres Programmieren',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(107,'SWAT','Software Architecture & Techniques',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(108,'USAB','Usability',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(109,'UCDE','User Centered Design - Engineering',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(110,'VID','Visual Interface Design',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,2),
-(111,'WEBLAB','Web Programming Lab',3,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2),
-(112,'AEDCIT','Academic English IELTS Preparation',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,3),
-(113,'AEDC1','Advanced English Diploma 1',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,3),
-(114,'AEDCTO','Advanced English Diploma Course TOEFL Preparation',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,3),
-(115,'ANGCPH','Anglo-American Culture, Politics and History',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,3),
-(116,'CAEPRO','Cambridge Proficiency Preparation Course',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,3),
-(117,'KUFA','Kunst der Finanzanlage',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,3),
-(118,'ENGDBU','English for Digital Business',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,3),
-(119,'ENGFTD','English for Future Technolgy Development',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,3),
-(120,'ENGSDC','English for Strategic and Digital Communication',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,3),
-(121,'ENGTCS','English for Technical & Computer Science',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,3),
-(122,'ETHIK','Ethik',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,3),
-(123,'ISFC','International School for Computer Science Students',3,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,3),
-(124,'ASACPH','Introduction to Asia Culture Politics & History',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,3),
-(125,'PROTCO','Professional and Technical Communication',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,3),
-(126,'SOZIAL','Social Project',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,3),
-(127,'SUM_SCHOOL','Summer School on Designing Serious Games',3,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,3),
-(128,'CG','Computer Graphics',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2);
+(1,'AD','Algorithmen & Datenstrukturen',6,true,false,true,true,0),
+(2,'ANLIS','Analysis',6,true,false,true,true,0),
+(3,'ASTAT','Applied Statistics for Data Science',3,true,false,true,true,1),
+(4,'APPE','Applikationsentwicklung',6,true,false,false,true,0),
+(5,'CNA','Computer & Network Architecture',6,true,false,true,true,0),
+(6,'DBS','Datenbanksysteme',6,true,false,true,true,1),
+(7,'DMATH','Diskrete Mathematik',6,true,false,true,true,0),
+(8,'ISF','Information Security Fundamentals',3,true,false,true,true,0),
+(9,'ITEO','IT-System Engineering & Operation',6,true,false,true,true,0),
+(10,'MOD','Modellierung Grundlagen',3,true,false,true,true,0),
+(11,'OOP','Objektorientierte Programmierung',6,true,false,true,true,0),
+(12,'PLAB','Programmier-Labor',3,true,false,true,false,0),
+(13,'PMRE','Project Management &Requirement Engineering',3,true,false,true,true,1),
+(14,'SWDE','Software-Development',6,true,false,true,true,1),
+(15,'VSK','Verteilte Systeme & Komponenten',6,true,false,true,true,1),
+(16,'BAA','Bachelorarbeit',12,true,false,true,true,4),
+(17,'WIPRO','Wirtschaftsprojekt',6,true,false,true,true,4),
+(18,'FKOM','Fachkommunikation',3,true,false,true,true,4),
+(19,'PMB','Project Management Basics',3,true,false,true,true,4),
+(20,'PTA','Projekt und Teamarbeit',6,true,false,true,true,4),
+(21,'ACBA','Accounting Basics',3,true,false,true,true,2),
+(22,'AEMBS','Advanced Embedded Systems',3,true,false,true,true,2),
+(23,'AIOT','Advanced Internet of Things',3,true,false,false,true,2),
+(24,'AITEC','Advances Internet Technologies',3,true,false,true,false,2),
+(25,'ADPENTEST','Advanced Penetration Testing',3,true,false,true,false,2),
+(26,'AROB','Angewandte industrielle Robotik',6,true,false,true,true,2),
+(27,'MAT2','Angewandte Mathematik 2',3,true,false,false,true,2),
+(28,'BW','Betriebswirtschaft im digitalen Umfeld',3,true,false,false,true,2),
+(29,'BDM','Big Data Management',3,true,false,true,false,2),
+(30,'CSA','C# in Action',3,true,false,true,false,2),
+(31,'CHMA','Change Management',3,true,false,true,false,2),
+(32,'CPLAB','Cloud Programming Lab',3,false,true,true,false,2),
+(33,'COBAU','Compilerbau',3,true,false,true,false,2),
+(34,'CNF','Computer Network Fundamentals',3,true,false,true,true,2),
+(35,'CCNA','Computer Networks',3,true,false,false,true,2),
+(36,'INFKOL','Computer Science Hot Topics',3,true,false,false,true,2),
+(37,'CONS','Consulting',3,true,false,true,false,2),
+(38,'ICS.CRS','Crisis Recovery Strategies',3,true,false,true,true,2),
+(39,'CYBER','Cyber Defence',3,true,false,true,true,2),
+(40,'DSO','Datenschutz in Organisation',3,true,false,true,false,2),
+(41,'DCEX','Digital Customer Experience',3,true,false,true,true,2),
+(42,'DIBM','Digitale Business Modelle',3,true,false,true,false,2),
+(43,'DITI','Digitale Transformation in der Industrie',3,true,false,true,false,2),
+(44,'DICO','Digitales Controlling',3,true,false,false,true,2),
+(45,'EBV','Echtzeit-Bildverarbeitung',3,true,false,false,true,2),
+(46,'ENLAB','Enterprise Programming Lab',3,true,false,false,true,2),
+(47,'GAME','Game Theory',3,true,false,true,true,2),
+(48,'GIS','Geographic Information Systems',3,true,false,false,true,2),
+(49,'GPRO','Geschäftsprozesse und Organisation',3,true,false,true,true,2),
+(50,'HMAT','Höhere Mathematik',3,true,false,false,true,2),
+(51,'IPCV','Image Processing & Computer Vision',3,true,false,false,true,2),
+(52,'IMLAB','Immersive Labs',3,true,false,true,true,2),
+(53,'IMATH','Informatik Mathematik',3,true,false,true,false,2),
+(54,'ITAU','IT Audit',3,true,false,true,false,2),
+(55,'ISMA','IT Service Management',3,true,false,false,true,2),
+(56,'ITRE','IT-Recht',3,true,false,false,true,2),
+(57,'INFSEC+MAN','IT-Security Management',3,true,false,true,false,2),
+(58,'KNRE','Knowledge Representation',3,true,false,true,true,2),
+(59,'KOMA','Konfliktmanagement',3,true,false,false,true,2),
+(60,'LIAL','Lineare Algebra',3,true,false,true,true,2),
+(61,'MA+PHY1','Mathematik & Physik Technik 1',6,true,false,true,true,2),
+(62,'MICRO','Microcontroller',3,true,false,false,true,2),
+(63,'MOBPRO','Mobile Programming',3,true,false,false,true,2),
+(64,'MOBSYS','Mobile Systems',3,true,false,false,true,2),
+(65,'NETW1','Networking 1',3,true,false,true,true,2),
+(66,'IOS','Programmieren fürs iOS',3,true,false,true,false,2),
+(67,'REUF','Recht für Unternehmensführung',3,true,false,true,false,2),
+(68,'MARI','Management und Recht im Informationszeitalter',3,true,false,false,true,2),
+(69,'SIM+MOD','Management und Recht im Informationszeitalter',3,true,false,false,true,2),
+(70,'SWT','Software Testing',3,true,false,false,true,2),
+(71,'UKOM','Unternehmenskommunikation und Sprachtechnologien',3,true,false,false,true,2),
+(72,'UGDM','Unternehmungsgründungen in digitalen Märkten',3,true,false,true,false,2),
+(73,'VRT','Virtual Reality Technologies',3,true,false,false,true,2),
+(74,'VWL','Volkswirtschaft',3,true,false,false,true,2),
+(75,'WEBT','Web-Technologien',3,true,false,true,true,2),
+(76,'XML','XML & JSON Technologies',3,false,true,true,false,2),
+(77,'ADML','Advanced Machine Learning',6,true,false,false,true,2),
+(78,'AISO','Artifical Intelligence: Search & Optimization',3,true,false,false,true,2),
+(79,'BDLC','Big Data Lab Cluster',3,true,false,false,true,2),
+(80,'BDLS','Big Data Lab Sandbox',3,false,true,true,false,2),
+(81,'BCHAIN','Blockchain',3,true,false,true,true,2),
+(82,'BIDS','Business Intelligence und Decision Support',3,false,true,true,true,2),
+(83,'CI','Cloud Infrastructure',3,true,false,false,true,2),
+(84,'CILAB','Cloud Infrastructure Lab',3,true,false,true,false,2),
+(85,'CAB','Cloud-Services Angebot & Betrieb',3,true,false,false,true,2),
+(86,'ROBLAB','Cognitive Robotics Lab',3,true,false,true,false,2),
+(87,'DASB','Data Science Basics',3,true,false,true,true,2),
+(88,'DAWA','Data Warehousing',3,true,false,true,true,2),
+(89,'DAVI','Datenvisualisierung',3,true,false,true,false,2),
+(90,'DL4G','Deep Learning for Games',3,true,false,true,false,2),
+(91,'FOMED','Formen der Mediengestaltung',3,true,false,false,true,2),
+(92,'GAMEDES','Game Design',3,true,false,false,true,2),
+(93,'GAMEDEV','Game Development',3,true,false,true,false,2),
+(94,'HFD','Human Factors & Design',3,true,false,true,false,2),
+(95,'ISLAB','Information Security Lab',3,true,false,true,true,2),
+(96,'ISM','Information Security Management',3,true,false,true,false,2),
+(97,'ISOA','Information Security - Organisatorische Aspekte',3,true,false,false,true,2),
+(98,'IAVR','Interaction for Virtual Reality',3,true,true,true,true,2),
+(99,'IOT','Internet of Things',3,true,false,true,false,2),
+(100,'KBDS','Knowledge-based Decision Support Systems',3,true,false,true,false,2),
+(101,'KRYPTO','Kryptologie ICS',3,true,false,true,true,2),
+(102,'ML','Machine Learning',3,true,false,true,true,2),
+(103,'MANSEC','Managementaspekte der Informationssicherheit',3,true,false,false,true,2),
+(104,'MOBLAB','Mobile Programming Lab',3,true,false,true,false,2),
+(105,'PCP','Programming Concepts & Paradigms',6,true,false,false,true,2),
+(106,'SPRG','Sicheres Programmieren',3,true,false,false,false,2),
+(107,'SWAT','Software Architecture & Techniques',3,true,false,false,true,2),
+(108,'USAB','Usability',3,true,false,true,true,2),
+(109,'UCDE','User Centered Design - Engineering',3,true,false,false,true,2),
+(110,'VID','Visual Interface Design',3,true,false,false,true,2),
+(111,'WEBLAB','Web Programming Lab',3,false,true,true,false,2),
+(112,'AEDCIT','Academic English IELTS Preparation',3,true,false,true,false,3),
+(113,'AEDC1','Advanced English Diploma 1',3,true,false,true,false,3),
+(114,'AEDCTO','Advanced English Diploma Course TOEFL Preparation',3,true,false,true,true,3),
+(115,'ANGCPH','Anglo-American Culture, Politics and History',3,true,false,false,true,3),
+(116,'CAEPRO','Cambridge Proficiency Preparation Course',3,true,false,false,true,3),
+(117,'KUFA','Kunst der Finanzanlage',3,true,false,true,true,3),
+(118,'ENGDBU','English for Digital Business',3,true,false,true,false,3),
+(119,'ENGFTD','English for Future Technolgy Development',3,true,false,false,true,3),
+(120,'ENGSDC','English for Strategic and Digital Communication',3,true,false,true,true,3),
+(121,'ENGTCS','English for Technical & Computer Science',3,true,false,true,false,3),
+(122,'ETHIK','Ethik',3,true,false,false,true,3),
+(123,'ISFC','International School for Computer Science Students',3,false,true,true,true,3),
+(124,'ASACPH','Introduction to Asia Culture Politics & History',3,true,false,true,false,3),
+(125,'PROTCO','Professional and Technical Communication',3,true,false,false,true,3),
+(126,'SOZIAL','Social Project',3,true,false,true,true,3),
+(127,'SUM_SCHOOL','Summer School on Designing Serious Games',3,false,true,false,true,3),
+(128,'CG','Computer Graphics',3,true,false,true,false,2);
 
 INSERT INTO module_language (module_id, language_iso_code) VALUES
 (1,'DE'),
@@ -275,37 +275,37 @@ INSERT INTO module_language (module_id, language_iso_code) VALUES
 (128,'EN');
 
 INSERT INTO requirement (id, inclusive, level_name) VALUES
-(1,	CONV('1', 2, 10) + 0,'Assessment');
+(1,	true,'Assessment');
 
 INSERT INTO requirement (id, inclusive) VALUES
-(2,	CONV('0', 2, 10) + 0), /*oop|plab*/
-(3,	CONV('1', 2, 10) + 0),/*anlis,dmath*/
-(4,	CONV('1', 2, 10) + 0),/*cyber*/
-(5,	CONV('1', 2, 10) + 0),/*iot*/
-(6,	CONV('1', 2, 10) + 0),/*webt*/
-(7,	CONV('1', 2, 10) + 0),/*vsk,dbs*/
-(8,	CONV('1', 2, 10) + 0),/*pren2*/
-(9,	CONV('0', 2, 10) + 0),/* LINAL|IMATH*/
-(10,CONV('1', 2, 10) + 0),/* PTA,FKOM*/
-(11,CONV('1', 2, 10) + 0),/* ITEO*/
-(12,CONV('1', 2, 10) + 0),/* AD*/
-(13,CONV('1', 2, 10) + 0),/* vsk*/
-(14,CONV('1', 2, 10) + 0),/* dbs*/
-(15,CONV('0', 2, 10) + 0),/* dbs|dmg*/
-(16,CONV('0', 2, 10) + 0),/* vsk|SWDE*/
-(17,CONV('1', 2, 10) + 0),/* IMATH*/
-(18,CONV('1', 2, 10) + 0),/* ISF*/
-(19,CONV('1', 2, 10) + 0),/* CAN*/
-(20,CONV('1', 2, 10) + 0),/* ANLIS,ASTAT*/
-(21,CONV('1', 2, 10) + 0),/* DMATH,ISF*/
-(22,CONV('1', 2, 10) + 0),/* ITRE*/
-(23,CONV('1', 2, 10) + 0),/* ANLIS*/
-(24,CONV('1', 2, 10) + 0),/* MBPRO*/
-(25,CONV('1', 2, 10) + 0),/* PTA*/
-(26,CONV('1', 2, 10) + 0),/* PMB*/
-(27,CONV('1', 2, 10) + 0),/* APPE*/
-(28,CONV('1', 2, 10) + 0),/* USAB*/
-(29,CONV('1', 2, 10) + 0);/* CNF*/
+(2,	false), /*oop|plab*/
+(3,	true),/*anlis,dmath*/
+(4,	true),/*cyber*/
+(5,	true),/*iot*/
+(6,	true),/*webt*/
+(7,	true),/*vsk,dbs*/
+(8,	true),/*pren2*/
+(9,	false),/* LINAL|IMATH*/
+(10,true),/* PTA,FKOM*/
+(11,true),/* ITEO*/
+(12,true),/* AD*/
+(13,true),/* vsk*/
+(14,true),/* dbs*/
+(15,false),/* dbs|dmg*/
+(16,false),/* vsk|SWDE*/
+(17,true),/* IMATH*/
+(18,true),/* ISF*/
+(19,true),/* CAN*/
+(20,true),/* ANLIS,ASTAT*/
+(21,true),/* DMATH,ISF*/
+(22,true),/* ITRE*/
+(23,true),/* ANLIS*/
+(24,true),/* MBPRO*/
+(25,true),/* PTA*/
+(26,true),/* PMB*/
+(27,true),/* APPE*/
+(28,true),/* USAB*/
+(29,true);/* CNF*/
 
 INSERT INTO requirement_module (requirement_id, module_id) VALUES
 (1,1),
@@ -465,14 +465,14 @@ INSERT INTO major_program (id, code, name, degree_program_id) VALUES
 (6,	'SWD W','Software Development – Web','IBA');
 
 INSERT INTO requirement (id, inclusive, major_program_id) VALUES
-(30,CONV('1', 2, 10) + 0,1),/*AI*/
-(31,CONV('0', 2, 10) + 0,1),/*AI*/
-(32,CONV('1', 2, 10) + 0,2),/*Data*/
-(33,CONV('0', 2, 10) + 0,2),/*Data*/
-(34,CONV('1', 2, 10) + 0,3),/*Intercation*/
-(35,CONV('1', 2, 10) + 0,4),/*ITOS*/
-(36,CONV('1', 2, 10) + 0,5),/*SWDM*/
-(37,CONV('1', 2, 10) + 0,6);/*SWDW*/
+(30,true,1),/*AI*/
+(31,false,1),/*AI*/
+(32,true,2),/*Data*/
+(33,false,2),/*Data*/
+(34,true,3),/*Intercation*/
+(35,true,4),/*ITOS*/
+(36,true,5),/*SWDM*/
+(37,true,6);/*SWDW*/
 
 INSERT INTO requirement_module (requirement_id, module_id) VALUES
 (30,78),
