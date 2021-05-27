@@ -1,16 +1,12 @@
-SET NAMES utf8;
-SET time_zone = '+00:00';
-SET foreign_key_checks = 0;
-SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
-INSERT INTO `degree_program` (`id`, `name`) VALUES
+INSERT INTO degree_program (id, name) VALUES
 ('IBA',	'Informatik Bachelor');
 
-INSERT INTO `language` (`iso_code`, `name`) VALUES
+INSERT INTO language (iso_code, name) VALUES
 ('DE',	'Deutsch'),
 ('EN',	'Englisch');
 
-INSERT INTO `module` (`id`, `code`,`name`, `credits`, `semester_model`,`intensive_week_model`, `fall_semester_model`, `spring_semester_model`, `type`) VALUES
+INSERT INTO module (id, code, name, credits, semester_model,intensive_week_model, fall_semester_model, spring_semester_model, type) VALUES
 (1,'AD','Algorithmen & Datenstrukturen',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,0),
 (2,'ANLIS','Analysis',6,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,0),
 (3,'ASTAT','Applied Statistics for Data Science',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('1', 2, 10) + 0,1),
@@ -140,7 +136,7 @@ INSERT INTO `module` (`id`, `code`,`name`, `credits`, `semester_model`,`intensiv
 (127,'SUM_SCHOOL','Summer School on Designing Serious Games',3,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,3),
 (128,'CG','Computer Graphics',3,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,CONV('1', 2, 10) + 0,CONV('0', 2, 10) + 0,2);
 
-INSERT INTO `module_language` (`module_id`, `language_iso_code`) VALUES
+INSERT INTO module_language (module_id, language_iso_code) VALUES
 (1,'DE'),
 (2,'DE'),
 (3,'DE'),
@@ -278,10 +274,10 @@ INSERT INTO `module_language` (`module_id`, `language_iso_code`) VALUES
 (127,'EN'),
 (128,'EN');
 
-INSERT INTO `requirement` (`id`, `inclusive`, `level_name`) VALUES
+INSERT INTO requirement (id, inclusive, level_name) VALUES
 (1,	CONV('1', 2, 10) + 0,'Assessment');
 
-INSERT INTO `requirement` (`id`, `inclusive`) VALUES
+INSERT INTO requirement (id, inclusive) VALUES
 (2,	CONV('0', 2, 10) + 0), /*oop|plab*/
 (3,	CONV('1', 2, 10) + 0),/*anlis,dmath*/
 (4,	CONV('1', 2, 10) + 0),/*cyber*/
@@ -311,7 +307,7 @@ INSERT INTO `requirement` (`id`, `inclusive`) VALUES
 (28,CONV('1', 2, 10) + 0),/* USAB*/
 (29,CONV('1', 2, 10) + 0);/* CNF*/
 
-INSERT INTO `requirement_module` (`requirement_id`, `module_id`) VALUES
+INSERT INTO requirement_module (requirement_id, module_id) VALUES
 (1,1),
 (1,2),
 (1,5),
@@ -360,7 +356,7 @@ INSERT INTO `requirement_module` (`requirement_id`, `module_id`) VALUES
 (29,34);
 
 
-INSERT INTO `module_requirement` (`module_id`, `requirement_id`) VALUES
+INSERT INTO module_requirement (module_id, requirement_id) VALUES
 (1,	2),
 (77,3),
 (77,1),
@@ -460,7 +456,7 @@ INSERT INTO `module_requirement` (`module_id`, `requirement_id`) VALUES
 (128,1),
 (76,2);
 
-INSERT INTO `major_program` (`id`, `code`, `name`, `degree_program_id`) VALUES
+INSERT INTO major_program (id, code, name, degree_program_id) VALUES
 (1,	'AI & VC','Artificial Intelligence & Visual Computing','IBA'),
 (2,	'DE & DS','Data Engineering & Data Science','IBA'),
 (3,	'HCID','Human Computer Interaction Design','IBA'),
@@ -468,7 +464,7 @@ INSERT INTO `major_program` (`id`, `code`, `name`, `degree_program_id`) VALUES
 (5,	'SWD M','Software Development – Mobile','IBA'),
 (6,	'SWD W','Software Development – Web','IBA');
 
-INSERT INTO `requirement` (`id`, `inclusive`, `major_program_id`) VALUES
+INSERT INTO requirement (id, inclusive, major_program_id) VALUES
 (30,CONV('1', 2, 10) + 0,1),/*AI*/
 (31,CONV('0', 2, 10) + 0,1),/*AI*/
 (32,CONV('1', 2, 10) + 0,2),/*Data*/
@@ -478,7 +474,7 @@ INSERT INTO `requirement` (`id`, `inclusive`, `major_program_id`) VALUES
 (36,CONV('1', 2, 10) + 0,5),/*SWDM*/
 (37,CONV('1', 2, 10) + 0,6);/*SWDW*/
 
-INSERT INTO `requirement_module` (`requirement_id`, `module_id`) VALUES
+INSERT INTO requirement_module (requirement_id, module_id) VALUES
 (30,78),
 (30,86),
 (30,90),

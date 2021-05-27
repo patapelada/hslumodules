@@ -2,14 +2,14 @@ version: '3.4'
 
 services:
     db:
-        image: mysql
+        image: postgres
+        restart: always
         environment:
-            - MYSQL_ROOT_PASSWORD=toor
-            - MYSQL_DATABASE=hslumodules
-            - MYSQL_USER=hslu
-            - MYSQL_PASSWORD=toor
+            POSTGRES_PASSWORD: toor
+            POSTGRES_DB: hslumodules
+            POSTGRES_USER: hslu
         ports:
-            - "3366:3306"
+        - 5432:5432
     admin:    
         image: adminer    
         ports:      
