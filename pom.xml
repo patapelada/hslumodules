@@ -14,9 +14,9 @@
 	<version>0.0.2-SNAPSHOT</version>
 	<name>hslumodules</name>
 	<description>HSLU Modules Backend</description>
-	<properties>
-		<java.version>16</java.version>
-	</properties>
+	<!-- <properties>
+		<java.version>16.01</java.version>
+	</properties> -->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
