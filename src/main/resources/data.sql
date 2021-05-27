@@ -315,7 +315,6 @@ INSERT INTO requirement_module (requirement_id, module_id) VALUES
 (1,8),
 (1,9),
 (1,10),
-(1,11),
 (1,18),
 (1,19),
 (1,20),
