@@ -132,7 +132,7 @@ public class ModuleRepositoryTest {
     }
 
     @Test
-    public void whenDeleteModule_thenDeleteRequirementsButNotReqModule() {
+    public void whenDeleteModule_thenKeepRequirementsAndReqModule() {
         // Given
         Module entity = getTestModule();
         entityManager.persist(entity.getLanguage().iterator().next());
@@ -150,7 +150,7 @@ public class ModuleRepositoryTest {
 
         // then
         Requirement foundReq = entityManager.find(Requirement.class, persistedReq.getId());
-        // assertNull(foundReq);
+        assertNotNull(foundReq);
         assertNotNull(entityManager.find(Module.class, requiredModule.getId()));
     }
 

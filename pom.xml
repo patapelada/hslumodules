@@ -11,9 +11,9 @@
 	</parent>
 	<groupId>com.bartock</groupId>
 	<artifactId>hslumodules</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<name>hslumodules</name>
-	<description>Demo project for Spring Boot</description>
+	<description>HSLU Modules Backend</description>
 	<properties>
 		<java.version>16</java.version>
 	</properties>
