@@ -1,0 +1,1 @@
+web java -Dserver.port=$PORT $JAVA_OPTS -jar target/hslumodules-0.0.2-SNAPSHOT.jar --spring.profiles.active=prod
