@@ -1,5 +1,6 @@
 package com.bartock.hslumodules.data;
 
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -13,7 +14,10 @@ import javax.persistence.JoinTable;
 import javax.persistence.JoinColumn;
 
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import org.hibernate.annotations.NaturalId;
 
@@ -37,6 +41,7 @@ public class Module {
 
     @NaturalId
     @NonNull
+    @NotNull
     private String code;
 
     @NotNull
@@ -55,6 +60,9 @@ public class Module {
     @ManyToMany(cascade = { CascadeType.DETACH })
     @JoinTable(name = "module_requirement", joinColumns = @JoinColumn(name = "module_id"), inverseJoinColumns = @JoinColumn(name = "requirement_id"))
     private Set<Requirement> requirements;
+
+    @OneToMany(mappedBy = "module", cascade = CascadeType.ALL)
+    private Set<Execution> executions = new HashSet<>();
 
     @NonNull
     @NotNull

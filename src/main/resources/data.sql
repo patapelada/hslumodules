@@ -134,7 +134,10 @@ INSERT INTO module (id, code, name, credits, semester_model,intensive_week_model
 (125,'PROTCO','Professional and Technical Communication',3,true,false,false,true,3),
 (126,'SOZIAL','Social Project',3,true,false,true,true,3),
 (127,'SUM_SCHOOL','Summer School on Designing Serious Games',3,false,true,false,true,3),
-(128,'CG','Computer Graphics',3,true,false,true,false,2);
+(128,'CG','Computer Graphics',3,true,false,true,false,2),
+(129,'3DMOD4RT','3D Modellieren für Echtzeitanwendungen',3,true,false,true,false,2),
+(130,'PREN1','Produktentwicklung 1',6,true,false,true,true,4),
+(131,'PREN2','Produktentwicklung 2',6,true,false,true,true,4);
 
 INSERT INTO module_language (module_id, language_iso_code) VALUES
 (1,'DE'),
@@ -272,7 +275,10 @@ INSERT INTO module_language (module_id, language_iso_code) VALUES
 (125,'EN'),
 (126,'DE'),
 (127,'EN'),
-(128,'EN');
+(128,'EN'),
+(129,'DE'),
+(130,'DE'),
+(131,'DE');
 
 INSERT INTO requirement (id, inclusive, level_name) VALUES
 (1,	true,'Assessment');
@@ -284,7 +290,7 @@ INSERT INTO requirement (id, inclusive) VALUES
 (5,	true),/*iot*/
 (6,	true),/*webt*/
 (7,	true),/*vsk,dbs*/
-(8,	true),/*pren2*/
+(8,	true),/*pren1*/
 (9,	false),/* LINAL|IMATH*/
 (10,true),/* PTA,FKOM*/
 (11,true),/* ITEO*/
@@ -327,6 +333,7 @@ INSERT INTO requirement_module (requirement_id, module_id) VALUES
 (6,75),
 (7,15),
 (7,6),
+(8,130),
 (9,60),
 (9,53),
 (10,18),
@@ -357,6 +364,7 @@ INSERT INTO requirement_module (requirement_id, module_id) VALUES
 
 INSERT INTO module_requirement (module_id, requirement_id) VALUES
 (1,	2),
+(131,8),
 (77,3),
 (77,1),
 (25,1),
@@ -515,3 +523,572 @@ INSERT INTO requirement_module (requirement_id, module_id) VALUES
 (37,106),
 (3,107),
 (37,108);
+
+INSERT INTO block (id, day, number) VALUES
+(11,1,1),
+(12,1,2),
+(13,1,3),
+(14,1,4),
+(21,2,1),
+(22,2,2),
+(23,2,3),
+(24,2,4),
+(31,3,1),
+(32,3,2),
+(33,3,3),
+(34,3,4),
+(41,4,1),
+(42,4,2),
+(43,4,3),
+(44,4,4),
+(51,5,1),
+(52,5,2),
+(53,5,3),
+(54,5,4),
+(61,6,1),
+(62,6,2);
+
+/**********************************
+            SEMESTER HS21
+***********************************/
+INSERT INTO semester (code) VALUES
+('HS21');
+/* MODULE ITEO () */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(1,9,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES 
+(1,11),(1, 12);
+
+/* MODULE SWDE (14) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(2,14,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(2,11),(2, 22);
+
+/* MODULE OOP (11) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(3,11,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(3,12),(3, 23);
+
+/* MODULE OOP (11) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(4,11,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(4,12),(4, 43);
+
+/* MODULE PLAB (12) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(5,12,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(5,12);
+
+/* MODULE AD (1) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(6,1,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(6,13),(6, 21);
+
+/* MODULE ASTAT (3) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(7,3,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(7,13);
+
+/* MODULE ANLIS (2) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(8,2,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(8,14),(8, 21);
+
+/* MODULE MOD (10) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(9,10,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(9,14);
+
+/* MODULE DMATH (7) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(10,7,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(10,21),(10, 22);
+
+/* MODULE ANLIS (2) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(11,2,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(11,23),(11, 33);
+
+/* MODULE MOD (10) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(12,10,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(12,23);
+
+/* MODULE ISF (8) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(13,8,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(13,24);
+
+/* MODULE PMRE (13) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(14,13,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(14,31);
+
+/* MODULE DMATH (7) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(15,7,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(15,42),(15, 23);
+
+/* MODULE CNA (5) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(16,5,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(16,42),(16, 53);
+
+/* MODULE VSK (15) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(17,15,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(17,42),(17, 52);
+
+/* MODULE ASTAT (3) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(18,3,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(18,43);
+
+/* MODULE DBS (6) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(19,6,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(19,44),(19, 53);
+
+/* MODULE PMRE (13) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(20,13,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(20,44);
+
+/* MODULE ISF (8) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(21,8,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(21,52);
+
+/* MODULE ASTAT (3) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(22,3,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(22,53);
+
+/* MODULE PMRE (13) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(23,13,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(23,53);
+
+/* MODULE WEBT (75) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(25,75,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(25,11);
+
+/* MODULE LIAL (60) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(26,60,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(26,12);
+
+/* MODULE WEBT (75) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(27,75,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(27,12);
+
+/* MODULE KNRE (58) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(28,58,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(28,12);
+
+/* MODULE COBAU (33) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(29,33,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(29,13);
+
+/* MODULE NETW1 (65) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(30,65,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(30,14);
+
+/* MODULE IOS (66) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(31,66,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(31,14);
+
+/* MODULE ACBA (21) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(32,21,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(32,21);
+
+/* MODULE CSA (30) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(33,30,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(33,22);
+
+/* MODULE REUF (67) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(34,67,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(34,22);
+
+/* MODULE GAME (47) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(35,47,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(35,23);
+
+/* MODULE REUF (67) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(36,67,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(36,23);
+
+/* MODULE WEBT (75) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(39,75,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(39,31);
+
+/* MODULE CYBER (39) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(40,39,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(40,41);
+
+/* MODULE CHMA (31) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(41,31,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(41,42);
+
+/* MODULE WEBT (75) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(42,75,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(42,42);
+
+/* MODULE WEBT (75) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(43,75,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(43,43);
+
+/* MODULE CYBER (39) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(44,39,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(44,44);
+
+/* MODULE DSO (40) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(45,40,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(45,44);
+
+/* MODULE UGDM (72) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(46,72,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(46,44);
+
+/* MODULE BCHAIN (81) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(48,81,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(48,52);
+
+/* MODULE BDM (29) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(49,29,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(49,53);
+
+/* MODULE AROB (26) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(52,26,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(52,12),(52, 13);
+
+/* MODULE MA+PHY1 (61) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(53,61,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(53,13),(53, 14);
+
+/* MODULE AROB (26) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(55,26,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(55,21),(55, 22);
+
+/* MODULE USAB (108) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(56,108,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(56,23);
+
+/* MODULE MA+PHY1 (61) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(57,61,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(57,23),(57, 24);
+
+/* MODULE USAB (108) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(58,108,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(58,24);
+
+/* MODULE AEMBS (22) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(59,22,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(59,43);
+
+/* MODULE AEMBS (22) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(60,22,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(60,44);
+
+/* MODULE FKOM (18) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(61,18,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(61,12);
+
+/* MODULE FKOM (18) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(62,18,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(62,13);
+
+/* MODULE PTA (20) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(63,20,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(63,13);
+
+/* MODULE FKOM (18) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(64,18,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(64,21);
+
+/* MODULE PMB (19) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(65,19,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(65,22);
+
+/* MODULE PMB (19) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(66,19,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(66,23);
+
+/* MODULE PTA (20) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(67,20,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(67,24);
+
+/* MODULE PMB (19) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(68,19,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(68,32);
+
+/* MODULE FKOM (18) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(69,18,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(69,33);
+
+/* MODULE PREN1 () */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(70,130,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(70,41),(70, 51);
+
+/* MODULE ENGDBU (118) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(71,118,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(71,23);
+
+/* MODULE KUFA (117) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(72,117,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(72,24);
+
+/* MODULE ENGTCS (121) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(73,121,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(73,32);
+
+/* MODULE KUFA (117) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(74,117,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(74,32);
+
+/* MODULE ASACPH (124) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(75,124,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(75,42);
+
+/* MODULE AEDCIT (112) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(76,112,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(76,43);
+
+/* MODULE ENGFTD (119) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(77,119,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(77,51);
+
+/* MODULE ENGTCS (121) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(78,121,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(78,52);
+
+/* MODULE ENGDBU (118) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(79,118,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(79,53);
+
+/* MODULE ROBLAB (86) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(80,86,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(80,41);
+
+/* MODULE CG (128) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(81,128,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(81,42),(81, 51);
+
+/* MODULE ADML (77) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(83,77,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(83,52),(83, 53);
+
+/* MODULE ML (102) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(84,102,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(84,52);
+
+/* MODULE DL4G (90) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(85,90,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(85,54);
+
+/* MODULE IAVR (98) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(87,98,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(87,51);
+
+/* MODULE GAMEDEV (93) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(88,93,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(88,52);
+
+/* MODULE HFD (94) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(89,94,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(89,53);
+
+/* MODULE DAWA (88) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(90,88,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(90,42);
+
+/* MODULE DAVI (89) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(91,89,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(91,51);
+
+/* MODULE DASB (87) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(92,87,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(92,54);
+
+/* MODULE ISM (96) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(93,96,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(93,41);
+
+/* MODULE KRYPTO (101) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(94,101,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(94,42);
+
+/* MODULE IOT (99) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(96,99,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(96,51);
+
+/* MODULE ISLAB (95) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(97,95,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(97,52);
+
+/* MODULE IOT (99) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(98,99,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(98,53);
+
+/* MODULE MOBLAB (104) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(99,104,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(99,41);
+
+/* MODULE SWT (70) */
+INSERT INTO execution (id, module_id, semester_code) VALUES
+(100,70,'HS21');
+INSERT INTO execution_block(execution_id, block_id) VALUES
+(100,43);
